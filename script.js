@@ -27,12 +27,12 @@
   };
  
  var success = function success(api) {
+  api.setTextureQuality('ld', function(err) {
+    if (!err) {
+        window.console.log('Texture quality set to low definition');
+    }
+});
    api.start(function () {
-    api.setTextureQuality('ld', function(err) {
-      if (!err) {
-          window.console.log('Texture quality set to low definition');
-      }
-  });
      api.addEventListener('viewerready', function () {
        api.getMaterialList(function (err, materials) {
          myMaterials = materials[0];
