@@ -1,6 +1,6 @@
 
  var version = '1.10.4';
- var uid = '4a023c30f5584baeac5c1d680e8ff988';
+ var uid = '798e7ed5df174d1caf3f09bb8e58fa63';
  var iframe = document.getElementById('api-frame');
  var client = new window.Sketchfab(version, iframe);
  var canvas = document.createElement('canvas');
@@ -108,6 +108,9 @@
    error: error,
    autostart: 1,
    preload: 1,
+   ui_infos: 0,
+   ui_stop: 0,
+   ui_controls: 0,
    ui_fadeout: 0,
    ui_fullscreen: 0,
    ui_settings: 0,
