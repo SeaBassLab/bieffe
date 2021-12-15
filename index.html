@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sketchfab Viewer API example</title>
+    <script
+      type="text/javascript"
+      src="https://static.sketchfab.com/api/sketchfab-viewer-1.10.4.js"
+    ></script>
+  </head>
+
+  <body>
+    <div class="sketchfab-embed-wrapper">
+      <div>
+        <iframe
+          src=""
+          id="api-frame"
+          allow="autoplay; fullscreen; xr-spatial-tracking"
+          xr-spatial-tracking
+          execution-while-out-of-viewport
+          execution-while-not-rendered
+          web-share
+          allowfullscreen
+          mozallowfullscreen="true"
+          webkitallowfullscreen="true"
+          style="width: 600px; height: 600px"
+        ></iframe>
+      </div>
+      <div class="buttons">
+        <button id="nero">BLACK</button>
+        <button id="metalic">METALIC</button>
+        <button id="roughness">ROUGHNESS</button>
+        <button id="high_nero">HIGH</button>
+        <button id="normal">NORMAL</button>
+        <button id="rosso">RED</button>
+      </div>
+    </div>
+    
+  </body>
+</html>
+<script src="./script.js"></script>
+<style>
+  .viewer.idle .controls > :not(.watermark):not(.no-fadeout) {
+    opacity: 1 !important;
+  }
+  .sketchfab-embed-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90vh;
+    width: 20%;
+  }
+
+  button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+</style>
