@@ -123,4 +123,5 @@
    ui_inspector: 0,
    ui_vr: 0,
    ui_ar: 0,
+   ui_watermark: 0
  });
